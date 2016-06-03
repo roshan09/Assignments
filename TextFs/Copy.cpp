@@ -4,7 +4,8 @@
 using namespace std;
 
 
-int  Copy(      int &BlockSize,
+int  Copy(      
+                int &BlockSize,
   		    	    int &NumberOfFreeBlock,	
   			       	int &StartOfFreeBlockNumber, 	
   				      int &DataOffset,	
