@@ -17,7 +17,7 @@ using namespace std;
   int NumberOfFreeBlock					=	MIN;
   int StartOfFreeBlockNumber 				=	MIN;
   int DataOffset 					=	MetaDataBlocks;
-  int LastInodeNumber					=	0;
+  int LastInodeNumber					=	MIN;
   
   vector <int> InodeArray;
   vector <int> StartArrayOfFile; 
