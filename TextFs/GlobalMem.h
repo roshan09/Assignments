@@ -2,7 +2,7 @@
 		File System Name :  TextFs
 		Author : Code_overflow
 
-		First 1024 Bytes to Store Meta Data of file system 	i.e SuperBlock
+		First 1024 Bytes to Store Meta Data of file system 			i.e SuperBlock
 		Rest of all will have actual data 					i.e DataBlock
 		DataBlock id Divided into N number of Blocks each of it having size of 512 Bytes		
 */
