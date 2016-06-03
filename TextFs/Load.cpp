@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 #include <string>  
 using namespace std;
-int Load (    	int &BlockSize,
+int Load (    	
+                int &BlockSize,
   		    	    int &NumberOfFreeBlock,	
   			       	int &StartOfFreeBlockNumber, 	
   				      int &DataOffset,	
