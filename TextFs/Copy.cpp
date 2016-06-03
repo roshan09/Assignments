@@ -31,7 +31,7 @@ int  Copy(      int &BlockSize,
   if(!fp)
   {
     cout<<"PLease Enter correct path"<<endl;
-return 0;
+    return 0;
   }
   fseek(fp,0,SEEK_END);                                   // point the File Pointer at Last
  
