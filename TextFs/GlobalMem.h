@@ -10,14 +10,14 @@
 using namespace std;
 #define MIN 			0
 #define BLOCKSIZE 		512
-#define MetaDataBlocks  1024
+#define MetaDataBlocks  	1024
 
 // Global Memory
-  int BlockSize 					= 		BLOCKSIZE;
-  int NumberOfFreeBlock				=		MIN;
-  int StartOfFreeBlockNumber 		= 		MIN;
-  int DataOffset 					= 		MetaDataBlocks;
-  int LastInodeNumber				=		0;
+  int BlockSize 					= 	BLOCKSIZE;
+  int NumberOfFreeBlock					=	MIN;
+  int StartOfFreeBlockNumber 				=	MIN;
+  int DataOffset 					=	MetaDataBlocks;
+  int LastInodeNumber					=	0;
   
   vector <int> InodeArray;
   vector <int> StartArrayOfFile; 
