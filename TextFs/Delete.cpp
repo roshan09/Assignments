@@ -14,8 +14,8 @@ int Delete( int &BlockSize,
   			map < int , string > & InodeToFileNameMap
   		)
 {
-		string FileNameTobeDeleted;
-		cin>>FileNameTobeDeleted;
+	string FileNameTobeDeleted;
+	cin>>FileNameTobeDeleted;
     	map < string , int >::iterator p;
     	map < int , string >::iterator q;
     	map <int , pair<int,int > >::iterator s;
