@@ -14,16 +14,16 @@ int main()
 {
 	int choice;
 		//load metadata
-	if(	!Load(	    BlockSize, 
+	if(	!Load(	    		BlockSize, 
 					NumberOfFreeBlock,
 					StartOfFreeBlockNumber,  
 					DataOffset,  
 					LastInodeNumber,
 					InodeArray,
-			   	    StartArrayOfFile,
+			   	    	StartArrayOfFile,
 			   	 	StartOfBlockAndNumOfBlocksForFile,
-			    	FileNameToInodeMap,
-			    	InodeToFileNameMap
+			    		FileNameToInodeMap,
+			    		InodeToFileNameMap
 				)		
    		);
 	while(true)
@@ -50,16 +50,16 @@ int main()
 		{
 			case 1:
 			{
-				if(	!Create(    BlockSize, 
+				if(	!Create(		BlockSize, 
 								NumberOfFreeBlock,
 								StartOfFreeBlockNumber,  
 								DataOffset,  
 								LastInodeNumber,
 								InodeArray,
-   						   	    StartArrayOfFile,
+   						   	    	StartArrayOfFile,
    						   	 	StartOfBlockAndNumOfBlocksForFile,
-   						    	FileNameToInodeMap,
-   						    	InodeToFileNameMap
+   						    		FileNameToInodeMap,
+   						    		InodeToFileNameMap
    							)		
    					)
    					cout<<"Error in Creating the File"<<endl;
@@ -68,16 +68,16 @@ int main()
 			}
 			case 2:	
 			{
-				if(	!Copy(      BlockSize, 
+				if(	!Copy(  		BlockSize, 
 								NumberOfFreeBlock,
 								StartOfFreeBlockNumber,  
 								DataOffset,  
 								LastInodeNumber,
 								InodeArray,
-   						   	    StartArrayOfFile,
-   						   	 	StartOfBlockAndNumOfBlocksForFile,
-   						    	FileNameToInodeMap,
-   						    	InodeToFileNameMap
+   						   	    	StartArrayOfFile,
+   						   		StartOfBlockAndNumOfBlocksForFile,
+   						    		FileNameToInodeMap,
+   						    		InodeToFileNameMap
    							)		
    					)
    	 				cout<<"Error in Copying the File"<<endl;
@@ -85,16 +85,16 @@ int main()
 			}
 			case 3:
 			{
-				if(	!Echo(      BlockSize, 
+				if(	!Echo(      		BlockSize, 
 								NumberOfFreeBlock,
 								StartOfFreeBlockNumber,  
 								DataOffset,  
 								LastInodeNumber,
 								InodeArray,
-   						   	    StartArrayOfFile,
+   						   	    	StartArrayOfFile,
    						   	 	StartOfBlockAndNumOfBlocksForFile,
-   						    	FileNameToInodeMap,
-   						    	InodeToFileNameMap
+   						    		FileNameToInodeMap,
+   						    		InodeToFileNameMap
    							)		
    					)
    					cout<<"Error in Displaying the File"<<endl;
@@ -107,10 +107,10 @@ int main()
 								StartOfFreeBlockNumber,  
 								DataOffset,  
 								InodeArray,
-   						   	    StartArrayOfFile,
+   						   	    	StartArrayOfFile,
    						   	 	StartOfBlockAndNumOfBlocksForFile,
-   						    	FileNameToInodeMap,
-   						    	InodeToFileNameMap
+   						    		FileNameToInodeMap,
+   						    		InodeToFileNameMap
    							)		
    					)
    					cout<<"Error in Listing the File"<<endl;
@@ -119,15 +119,15 @@ int main()
 			}
 			case 5:
 			{
-				if (!Delete (   BlockSize, 
+				if (!Delete (   		BlockSize, 
 								NumberOfFreeBlock,
 								StartOfFreeBlockNumber,  
 								DataOffset,  
 								InodeArray,
-   						   	    StartArrayOfFile,
+   						   	    	StartArrayOfFile,
    						   	 	StartOfBlockAndNumOfBlocksForFile,
-   						    	FileNameToInodeMap,
-   						    	InodeToFileNameMap
+   						    		FileNameToInodeMap,
+   						    		InodeToFileNameMap
    							)		
    					)
    					cout<<"Error in Deleting the File"<<endl;
@@ -135,16 +135,16 @@ int main()
 			}
 			case 6:
 			{
-							if(Store (   	BlockSize, 
+					if(Store (   		BlockSize, 
 								NumberOfFreeBlock,
 								StartOfFreeBlockNumber,  
 								DataOffset,  
-							LastInodeNumber,
+								LastInodeNumber,
 								InodeArray,
-   						   	    StartArrayOfFile,
+   						   	    	StartArrayOfFile,
    						   	 	StartOfBlockAndNumOfBlocksForFile,
-   						    	FileNameToInodeMap,
-   						    	InodeToFileNameMap
+   						    		FileNameToInodeMap,
+   						    		InodeToFileNameMap
    							)		
    					);
 				return 0;
